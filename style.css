@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ff914d, #ff3131);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.container {
+    width: 450px;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.painel {
+    margin-bottom: 25px;
+}
+
+.painel p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* BOTÃO PIZZA */
+
+.pizzaBotao {
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    border: none;
+
+    font-size: 90px;
+
+    cursor: pointer;
+
+    background-color: #ffd166;
+
+    transition: 0.15s;
+
+    margin-bottom: 25px;
+}
+
+.pizzaBotao:hover {
+    transform: scale(1.08);
+}
+
+.pizzaBotao:active {
+    transform: scale(0.95);
+}
+
+/* LOJA */
+
+.loja h2 {
+    margin-bottom: 15px;
+}
+
+.loja button {
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #2d6a4f;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.loja button:hover {
+    background-color: #40916c;
+}
+
+/* REINICIAR */
+
+.reiniciar {
+
+    margin-top: 25px;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #6c757d;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.reiniciar:hover {
+    background-color: #868e96;
+}
+
+/* MENSAGEM */
+
+#mensagem {
+    margin-top: 20px;
+    color: #ffe066;
+}
+
+.pizzaBotao {
+    animation: girar 8s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

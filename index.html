@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🍕 Pizza Clicker</h1>
+
+    <div class="painel">
+
+        <p>🍕 Pizzas Vendidas: <span id="pontos">0</span></p>
+
+        <p>🔥 Poder da Pizzaria: <span id="valorClique">1</span></p>
+
+        <p>⬆️ Total de Upgrades: <span id="upgrades">0</span></p>
+
+    </div>
+
+    <!-- BOTÃO PIZZA -->
+    <button id="botaoClique" class="pizzaBotao">
+        🍕
+    </button>
+
+    <div class="loja">
+
+        <h2>🛒 Melhorias</h2>
+
+        <button id="upgrade1">
+            👵 Forno da Vovó (+1)<br>
+            Comprados: <span id="cntUpgrades1">0</span><br>
+            Custo: <span id="custo1">10</span>
+        </button>
+
+        <button id="upgrade2">
+            🔥 Forno Industrial (+5)<br>
+            Comprados: <span id="cntUpgrades2">0</span><br>
+            Custo: <span id="custo2">50</span>
+        </button>
+
+        <button id="upgrade3">
+            🏪 Abrir Filial (+10)<br>
+            Comprados: <span id="cntUpgrades3">0</span><br>
+            Custo: <span id="custo3">100</span>
+        </button>
+
+    </div>
+
+    <button id="botaoReiniciar" class="reiniciar">
+        🔄 Reiniciar Jogo
+    </button>
+
+    <h2 id="mensagem"></h2>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
