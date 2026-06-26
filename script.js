@@ -47,7 +47,6 @@ function atualizarTela() {
 function reiniciaJogo(){
     window.location.reload();
 }
-
 // BOTÃO PRINCIPAL
 botaoClique.addEventListener("click", () => {
     pontos += valorClique;
@@ -57,7 +56,6 @@ botaoClique.addEventListener("click", () => {
 botaoReiniciar.addEventListener("click",() =>{
     reiniciaJogo()
 })
-
 // UPGRADE 1
 upgrade1.addEventListener("click", () => {
 
@@ -65,49 +63,38 @@ upgrade1.addEventListener("click", () => {
         pontos -= custo1;
         valorClique += 1;
         upgrades++;
-
         custo1 += 5;
         cntUpgrade1++
         atualizarTela();
     } else {
         alert("Pontos insuficientes!");
     }
-
 });
-
 // UPGRADE 2
 upgrade2.addEventListener("click", () => {
-
     if (pontos >= custo2) {
         pontos -= custo2;
         valorClique += 5;
         upgrades++;
         cntUpgrade2++
-        custo2 += 20;
-        
+        custo2 += 20;  
         atualizarTela();
     } else {
         alert("Pontos insuficientes!");
     }
-
 });
-
 // UPGRADE 3
 upgrade3.addEventListener("click", () => {
-
     if (pontos >= custo3) {
         pontos -= custo3;
         valorClique += 10;
         upgrades++;
-
         custo3 += 50;
         cntUpgrade3++
         atualizarTela();
     } else {
         alert("Pontos insuficientes!");
     }
-
 });
-
 // INICIAR
 atualizarTela();
