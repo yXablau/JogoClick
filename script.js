@@ -8,7 +8,6 @@ let custo1 = 10;
 let custo2 = 50;
 let custo3 = 100;
 let ganhou = false;
-// ELEMENTOS HTML
 const botaoReiniciar = document.getElementById("botaoReiniciar");
 const pontosTexto = document.getElementById("pontos");
 const valorCliqueTexto = document.getElementById("valorClique");
@@ -24,7 +23,6 @@ const custo3Texto = document.getElementById("custo3");
 const contaUpgrade1 = document.getElementById("cntUpgrades1")
 const contaUpgrade2 = document.getElementById("cntUpgrades2")
 const contaUpgrade3 = document.getElementById("cntUpgrades3")
-// FUNÇÃO ATUALIZAR TELA
 function atualizarTela() {
     pontosTexto.textContent = pontos;
     valorCliqueTexto.textContent = valorClique;
@@ -47,16 +45,13 @@ function atualizarTela() {
 function reiniciaJogo(){
     window.location.reload();
 }
-// BOTÃO PRINCIPAL
 botaoClique.addEventListener("click", () => {
     pontos += valorClique;
     atualizarTela();
 });
-// BOTÂO REINICIAR JOGO
 botaoReiniciar.addEventListener("click",() =>{
     reiniciaJogo()
 })
-// UPGRADE 1
 upgrade1.addEventListener("click", () => {
     if (pontos >= custo1) {
         pontos -= custo1;
@@ -69,7 +64,6 @@ upgrade1.addEventListener("click", () => {
         alert("Pontos insuficientes!");
     }
 });
-// UPGRADE 2
 upgrade2.addEventListener("click", () => {
     if (pontos >= custo2) {
         pontos -= custo2;
@@ -82,7 +76,6 @@ upgrade2.addEventListener("click", () => {
         alert("Pontos insuficientes!");
     }
 });
-// UPGRADE 3
 upgrade3.addEventListener("click", () => {
     if (pontos >= custo3) {
         pontos -= custo3;
@@ -95,5 +88,4 @@ upgrade3.addEventListener("click", () => {
         alert("Pontos insuficientes!");
     }
 });
-// INICIAR
 atualizarTela();
