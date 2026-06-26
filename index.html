@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Clicker</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,34 +23,73 @@
 
     </div>
 
-    <!-- BOTÃO PIZZA -->
-    <button id="botaoClique" class="pizzaBotao">
-        🍕
-    </button>
+    <!-- ÁREA PRINCIPAL -->
+    <div class="jogoArea">
 
-    <div class="loja">
+        <!-- PIZZA -->
+        <div class="pizzaArea">
 
-        <h2>🛒 Melhorias</h2>
+            <button id="botaoClique" class="pizzaBotao">
+                🍕
+            </button>
 
-        <button id="upgrade1">
-            👵 Forno da Vovó (+1)<br>
-            Comprados: <span id="cntUpgrades1">0</span><br>
-            Custo: <span id="custo1">10</span>
-        </button>
+        </div>
 
-        <button id="upgrade2">
-            🔥 Forno Industrial (+5)<br>
-            Comprados: <span id="cntUpgrades2">0</span><br>
-            Custo: <span id="custo2">50</span>
-        </button>
+        <!-- LOJA -->
+        <div class="loja">
 
-        <button id="upgrade3">
-            🏪 Abrir Filial (+10)<br>
-            Comprados: <span id="cntUpgrades3">0</span><br>
-            Custo: <span id="custo3">100</span>
-        </button>
+            <h2>🛒 Melhorias</h2>
+
+            <button id="upgrade1">
+
+                👵 Forno da Vovó (+1)
+                <br><br>
+
+                Comprados:
+                <span id="cntUpgrades1">0</span>
+
+                <br><br>
+
+                Custo:
+                <span id="custo1">10</span>
+
+            </button>
+
+            <button id="upgrade2">
+
+                🔥 Forno Industrial (+5)
+                <br><br>
+
+                Comprados:
+                <span id="cntUpgrades2">0</span>
+
+                <br><br>
+
+                Custo:
+                <span id="custo2">50</span>
+
+            </button>
+
+            <button id="upgrade3">
+
+                🏪 Abrir Filial (+10)
+                <br><br>
+
+                Comprados:
+                <span id="cntUpgrades3">0</span>
+
+                <br><br>
+
+                Custo:
+                <span id="custo3">100</span>
+
+            </button>
+
+        </div>
 
     </div>
+
+    <!-- REINICIAR -->
 
     <button id="botaoReiniciar" class="reiniciar">
         🔄 Reiniciar Jogo
@@ -60,5 +100,6 @@
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>

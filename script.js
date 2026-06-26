@@ -58,7 +58,6 @@ botaoReiniciar.addEventListener("click",() =>{
 })
 // UPGRADE 1
 upgrade1.addEventListener("click", () => {
-
     if (pontos >= custo1) {
         pontos -= custo1;
         valorClique += 1;
